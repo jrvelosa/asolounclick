@@ -1,0 +1,57 @@
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+    <div class="container">
+        <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
+            <img src="./assets/img/brand/Fondo1.png" width="30" height="30" class="rounded-circle d-inline-block fa-align-justify " alt="" loading="lazy"> A solo un Click
+        </a>
+        <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+            <div class="navbar-collapse-header">
+                <div class="row">
+                    <div class="col-6 collapse-brand">
+                        <a [routerLink]="['/home']">
+                            <img src="./assets/img/brand/Logo2.png">
+                        </a>
+                    </div>
+                    <div class="col-6 collapse-close">
+                        <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+              <span></span>
+              <span></span>
+            </button>
+                    </div>
+                </div>
+            </div>
+            <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                <li class="nav-item dropdown">
+                    <a class="nav-link no-caret" href="#" data-toggle="dropdown" role="button">
+                        <i class="ni ni-ui-04 d-lg-none"></i>
+                        <span class="nav-link-inner--text">Inicio</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                <li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="https://www.facebook.com/people/Sandra-Milena/100056552447835" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
+                        <i class="fa fa-facebook-square"></i>
+                        <span class="nav-link-inner--text d-lg-none">Facebook</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="https://www.instagram.com/samymoreno24" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
+                        <i class="fa fa-instagram"></i>
+                        <span class="nav-link-inner--text d-lg-none">Instagram</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="https://api.whatsapp.com/send?phone=-573133869234&text=Hola,%20Te%20escribo%20por%20el%20anuncio%20de%20Tiendas%20Virtuales!!%20%C2%BFPuedes%20por%20favor%20resolver%20mis%20dudas?" target="_blank" data-toggle="tooltip"
+                        title="Follow us on Twitter">
+                        <i class="fa fa-whatsapp"></i>
+                        <span class="nav-link-inner--text d-lg-none">WhatsApp</span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
